@@ -183,7 +183,7 @@ const jonas = {
     job: 'teacher',
     friends: ['Michael', 'Peter', 'Steven']
 };
-*/
+
 
 const jonas = {
     firstname: 'Jonas',
@@ -217,3 +217,25 @@ jonas['twitter'] = '@jonasschmedtmann';
 console.log(jonas);
 
 console.log(`${jonas.firstname} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}.`); // dot working left to rightt
+*/
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    birthYear: 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven'],
+    hasDriversLicense: true,
+
+    //calcAge: function(birthYear) {
+    //    return 2037 - birthYear; 
+    //}
+
+    calcAge: function() {
+        console.log(this);
+        return 2037 - this.birthYear;
+    }
+};
+
+console.log(jonas.calcAge());
+//console.log(jonas['calcAge'](1991));
