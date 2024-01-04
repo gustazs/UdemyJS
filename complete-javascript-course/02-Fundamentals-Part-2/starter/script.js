@@ -227,15 +227,25 @@ const jonas = {
     friends: ['Michael', 'Peter', 'Steven'],
     hasDriversLicense: true,
 
+    calcAge: function() {
+       return 2037 - this.birthYear; 
+    },
+ 
     //calcAge: function(birthYear) {
-    //    return 2037 - birthYear; 
+    //    this.age = 2037 - this.birthYear;
+    //    return 
     //}
 
-    calcAge: function() {
-        console.log(this);
-        return 2037 - this.birthYear;
+    getSummary: function() {
+        return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
     }
 };
 
 console.log(jonas.calcAge());
 //console.log(jonas['calcAge'](1991));
+
+console.log(`${jonas.firstName} é ${jonas.job} com ${jonas.calcAge()} anos de idade. E ele ${jonas.hasDriversLicense ? 'tem carteira de habilitação' : 'não tem carteira de habilitação'}.
+
+Ele possui ${jonas.friends.length} amigos, que são: ${jonas.friends[0]}, ${jonas.friends[1]} e ${jonas.friends[2]}.`);
+
+console.log(jonas.getSummary());
