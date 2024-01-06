@@ -217,7 +217,7 @@ jonas['twitter'] = '@jonasschmedtmann';
 console.log(jonas);
 
 console.log(`${jonas.firstname} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}.`); // dot working left to rightt
-*/
+
 
 const jonas = {
     firstName: 'Jonas',
@@ -249,3 +249,26 @@ console.log(`${jonas.firstName} é ${jonas.job} com ${jonas.calcAge()} anos de i
 Ele possui ${jonas.friends.length} amigos, que são: ${jonas.friends[0]}, ${jonas.friends[1]} e ${jonas.friends[2]}.`);
 
 console.log(jonas.getSummary());
+
+
+console.log('Lifiting weights repetition 1');
+
+
+// for loops keeps running while condition is TRUE
+for(let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifiting weights repetition ${rep}`);
+}
+*/
+
+const jonas = [
+    'Jonas', // name
+    'Schmedtmann', // last name
+    2037 - 1991, // age
+    'teacher', // job
+    ['Michael', 'Peter', 'Steven'], // friends,
+    true 
+];
+
+for (let i = 0; i < jonas.length; i++) {
+    console.log(jonas[i]);
+}
