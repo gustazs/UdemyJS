@@ -260,6 +260,8 @@ for(let rep = 1; rep <= 10; rep++) {
 }
 */
 
+const types = [];
+
 const jonas = [
     'Jonas', // name
     'Schmedtmann', // last name
@@ -270,5 +272,35 @@ const jonas = [
 ];
 
 for (let i = 0; i < jonas.length; i++) {
-    console.log(jonas[i]);
+    console.log(jonas[i], typeof jonas[i]);
+
+    //types[i] = typeof jonas[i];
+    types.push(typeof jonas[i]);
+}
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i]);
+}
+console.log(ages);
+
+
+// continue -> pula um loop 
+// and break -> para o loop inteiro
+console.log('------ CONTINUE --------');
+for (let i = 0; i < jonas.length; i++) {
+    if (typeof jonas[i] !== 'string') continue; // true = continue, ou seja, vai pular um loop e ir para o próximo
+    // false = continua o loop normalmente
+
+    console.log(jonas[i], typeof jonas[i]);
+     
+}
+
+console.log('------ BREAK --------');
+for (let i = 0; i < jonas.length; i++) {
+    if (typeof jonas[i] === 'number') break; 
+    console.log(jonas[i], typeof jonas[i]);
+     
 }
