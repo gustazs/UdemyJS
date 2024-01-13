@@ -5,19 +5,21 @@ const calcTip = function (bill) {
 };
 
 const calcAverage = function (arr) {
-    console.log("______ MÉDIA ________")
+    let sum = 0
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
     return sum / arr.length;
 }
 
-const bills = [50, 170, 80, 90, 100, 234, 123, 543, 124, 126];
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 const tips = [];
 const totals = [];
 
-for (let i = 0; i < bills.length; i++){
+for (let i = 0; i < bills.length; i++) {
     tips.push(calcTip(bills[i]));
     totals.push(bills[i] + tips[i]);
-    console.log(totals[i]);
-    let sum = totals[i] + sum;
 }
 
-calcAverage(totals);
+console.log(bills, tips, totals);
+console.log(calcAverage(totals));
