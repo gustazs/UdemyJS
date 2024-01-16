@@ -9,3 +9,11 @@ const calcAge = birthYear => 2037 - birthYear;
 console.log();
 
 // Live Server
+/*
+Como falhar em codar
+- Não ter um objetivo claro
+- Copiar código sem saber como funciona
+- Não reforçar o que aprende fazendo pequenos desafios ou anotações
+- Não praticar
+
+*/
