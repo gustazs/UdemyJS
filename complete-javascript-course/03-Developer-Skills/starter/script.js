@@ -43,4 +43,8 @@ Corrigindo falhas:
 5. Não se conectar com pessoas que também aprendem programação
 - Explique conceitos para outras pessoas
 - 
+
+
+Como pensar como um programador!
+
 */
