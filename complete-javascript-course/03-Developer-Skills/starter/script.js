@@ -47,4 +47,25 @@ Corrigindo falhas:
 
 Como pensar como um programador!
 
+Como falhar em resolver problemas:
+- Saltar para o problema sem pensar muito
+- Implementa a solução de uma forma desestruturada
+- Fica estressado quando as coisas não funcionam
+- É muito orgulhoso de si para pesquisar soluções
+
+Corrigindo falhas
+- Fique calmo e desacelere, não salte para o problema sem um plano
+- Faça um abordagem lógica e racional
+- Use a estrutura de 4 etapas para resolver o problema
+
+4-step framework:
+1° Ter certeza que você entende 100% o problema e fazer perguntas certas para obter uma imagem mais clara do problema.
+
+2° Dividir para conquistar, quebrar um grande problema em pequenos sub-problemas.
+
+3° Não tenha medo de fazer muitas pesquisas (Google,Stack Overflow, MDN.)
+
+4° Para grande probelmas, escreva um pseudo código com um pesudocódigo
+
+
 */
