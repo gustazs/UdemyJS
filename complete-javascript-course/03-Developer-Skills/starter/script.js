@@ -68,7 +68,6 @@ Corrigindo falhas
 4° Para grande probelmas, escreva um pseudo código com um pesudocódigo
 
 
-*/
 
 // PROBLEM:
 // We work for a company building a smart home thermometer. Our most recent task is this: "Given an array of temperatures of one day, calculate the temperature amplitude. Keep in mind that sometimes there might be a sensor error."
@@ -127,3 +126,21 @@ const calcTempAmplitudeNew = function(t1, t2) {
 };
 const amplitudenew = calcTempAmplitudeNew([3,5,1,6], [1,5,7,32]);
 console.log(amplitudenew);
+*/
+
+const measureKelvin = function () {
+    const measurement = {
+        type: 'temp',
+        unit: 'celsius',
+        // C) FIX
+        value: Number(prompt('Degrees celsius:'))
+    };
+    // B) FIND
+    console.table(measurement);
+
+    const kelvin = measurement.value + 273;
+    return kelvin;
+}
+// A) IDENTIFY
+console.log(measureKelvin());
+
