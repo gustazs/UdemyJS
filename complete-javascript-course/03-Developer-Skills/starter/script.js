@@ -126,7 +126,7 @@ const calcTempAmplitudeNew = function(t1, t2) {
 };
 const amplitudenew = calcTempAmplitudeNew([3,5,1,6], [1,5,7,32]);
 console.log(amplitudenew);
-*/
+
 
 const measureKelvin = function () {
     const measurement = {
@@ -143,4 +143,22 @@ const measureKelvin = function () {
 }
 // A) IDENTIFY
 console.log(measureKelvin());
+*/
 
+// Coding Challenge #1
+// Dada uma série de temperaturas máximas previstas, o termômetro exibe uma string com as temperaturas fornecidas. Exemplo: [17, 21, 23] irá imprimir "... 17ºC em 1 dia ... 21ºC em 2 dias ... 23ºC em 3 dias ..."
+
+// Suas tarefas
+// 1. Crie uma função 'printForecast' que recebe um array 'arr' e registra uma string como a acima no console. Experimente com os dois conjuntos de dados de teste
+// 2. Use a estrutura de resolução de problemas: entenda o problema e divida-o em subproblemas!
+
+// Entenda o problema:
+// De acordo com os valores de entrada serão exibidos na string? Sim, são enviados em formato de array
+// De acordo com o tamanho e o índice de cada valor mostra os dias? Sim, da pra utilizar um loop dentro da função para mostrar os dias e alguma forma de concatenar as strings para ficar ao lado da outra
+
+// Subproblemas
+// Criar a função com o parametro arr
+// implementar uma estrutura de repetição de acordo com o tamanho do arr
+// dentro loop, mostrar a string ao console e concatenar de acordo com cada repetição
+
+const printForecast = function (arr) {};
