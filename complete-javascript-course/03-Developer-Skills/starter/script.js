@@ -161,4 +161,11 @@ console.log(measureKelvin());
 // implementar uma estrutura de repetição de acordo com o tamanho do arr
 // dentro loop, mostrar a string ao console e concatenar de acordo com cada repetição
 
-const printForecast = function (arr) {};
+const printForecast = function (arr) {
+  let str = '';
+  for (let i = 0; i < arr.length; i++) {
+    str += `... ${arr[i]}°C in ${i + 1} days`;
+  }
+  console.log(str);
+};
+printForecast([2, 5, 8, 10]);
